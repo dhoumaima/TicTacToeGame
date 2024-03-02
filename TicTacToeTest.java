@@ -57,6 +57,7 @@ public class TicTacToeTest {
     public void isValidMoveTest()
     {
         // Créez un tableau représentant le plateau
+        
         char[][] board = new char[][] {
             {' ', 'O', 'X'},
             {'O', ' ', 'O'},
