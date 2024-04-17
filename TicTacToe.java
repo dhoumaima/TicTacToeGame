@@ -183,5 +183,3 @@ public class TicTacToe
         System.out.println(board[2][0]+"|"+board[2][1]+"|"+board[2][2]);
     }
 }
- }
-}
