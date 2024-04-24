@@ -54,7 +54,8 @@ public class TicTacToe
         }
     }
     //une methode pour tester si la jeu est terminer ou non 
-    public static String isGameFinish(char[][] board) {
+    public static String isGameFinish(char[][] board) 
+    {
         // Les tests pour le joueur
         if (TheWinner(board, 'X')) {
             return "You win :)\n" ;
@@ -69,7 +70,8 @@ public class TicTacToe
         return "The game is over.";
     }
 //une methode pour que la machine choisi une position aleatoire
-    public static void ComputerMove(char[][] board) {
+    public static void ComputerMove(char[][] board) 
+    {
         Random rand =new Random();
         int computerMove;
         while (true) 
@@ -119,7 +121,8 @@ public class TicTacToe
         }
     }
 //une methode pour lire la position choisi par l'utilisateur
-    public static void playerMove(char[][] board) {
+    public static void playerMove(char[][] board) 
+    {
         while (true) {
             System.out.println("Where would you like to play?(1-9)");
             Scanner scanner=new Scanner(System.in);
@@ -139,7 +142,8 @@ public class TicTacToe
         
     }
 //une methode pour vérifier si cette position est disponible ou non.
-    public static void placeMove(char[][] board,String position, char symbol) {
+    public static void placeMove(char[][] board,String position, char symbol) 
+    {
        
         switch (position) {
             case "1":
@@ -175,7 +179,8 @@ public class TicTacToe
         }
     }
 //une methode pour afficher la board.
-    public static void printBoard(char[][] board) {
+    public static void printBoard(char[][] board)
+    {
         System.out.println(board[0][0]+"|"+board[0][1]+"|"+board[0][2]);
         System.out.println("-+-+-");
         System.out.println(board[1][0]+"|"+board[1][1]+"|"+board[1][2]);

@@ -95,4 +95,18 @@ public void testIsGameFinish() {
     assertEquals( "The game is over.", TicTacToe.isGameFinish(board2));
     
 }
+
+ @Test
+ public void testTheWinner_PlayerXWins() {
+     TicTacToe ticTacToe = new TicTacToe();
+     char[][] board = {
+         {'X', 'X', 'X'},
+         {' ', ' ', ' '},
+         {' ', ' ', ' '}
+     };
+
+     boolean result = ticTacToe.TheWinner(board, 'X');
+
+     assertTrue(result);
+ }
 }
